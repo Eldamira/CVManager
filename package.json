@@ -1,0 +1,36 @@
+{
+  "name": "resume_management_system",
+  "version": "0.0.1",
+  "description": "Resume Management System built as the project for the Internship Certification Program (ICP) at 99X Technology.",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.4.3",
+    "angular-ui-router": "^0.2.15",
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",
+    "mongoose": "^4.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasunkv/CVManager.git"
+  },
+  "keywords": [
+    "rms",
+    "node",
+    "angular",
+    "mongodb",
+    "express",
+    "mean-stack"
+  ],
+  "author": "Kasun Kodagoda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasunkv/CVManager/issues"
+  },
+  "homepage": "https://github.com/kasunkv/CVManager#readme"
+}
