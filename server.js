@@ -15,6 +15,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 
 // hook the app routes
+// New comment
 appRoutes(app);
 
 app.listen(port, function () {
