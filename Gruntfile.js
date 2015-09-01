@@ -14,8 +14,21 @@ module.exports = function (grunt) {
 				'./public/**/*.js',
 				'./api/**/*.js'
 			]
+		},
+		karma: {
+			unit: {
+				configFile: 'karma.config.js',
+				background: true,
+				autoWatch: true
+			}, 
+			continuous: {
+				configFile: 'karma.config.js',
+    			singleRun: true,
+    			browsers: ['PhantomJS']
+			}
 		}
 	});	
 
-	grunt.registerTask('default', ['eslint']);
+	grunt.loadNpmTasks('grunt-karma');
+	grunt.registerTask('default', ['eslint', 'karma']);
 };
