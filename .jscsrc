@@ -1,0 +1,11 @@
+{
+    "preset": "google",
+	"excludeFiles": [
+		"node_modules"
+	],
+	"disallowMultipleVarDecl": null,
+	"maximumLineLength": null,
+	"validateIndentation": "\t",
+	"requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+	"disallowKeywordsOnNewLine": null
+}

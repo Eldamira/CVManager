@@ -1,0 +1,8 @@
+{
+	"undef": true,
+	"unused": true,
+	"strict": true,
+	"loopfunc": true,
+	"eqeqeq": true,
+	"es3": true
+}
