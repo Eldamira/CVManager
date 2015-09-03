@@ -1,0 +1,29 @@
+{
+
+	"http": {"module": "http"},
+	"async": {"module": "async"},
+	"express": {"module": "express"},
+	"bodyParser": {"module": "body-parser"},
+	"mongoose": {"module": "mongoose"},
+	"AppConfigs": {"module": "./api/config/app.config"},
+	"database": {"module": "./api/config/database"},
+	"app": {"factoryBean": "express"},
+	"testEndpoint": {
+		"module": "./api/api_modules/testEndpoint",
+		"constructorArgs": []
+	},
+	"appRoutes": {
+		"module": "./api/routes",
+		"constructorArgs": [
+			{"bean": "express"},
+			{"bean": "testEndpoint"}
+		]
+	},
+	"testFile": {
+		"module": "./test/spec/test",
+		"constructorArgs": [
+			{"bean": "testEndpoint"}
+		]		
+	}
+	
+}
