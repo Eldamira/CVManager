@@ -16,19 +16,19 @@
 })();*/
 
 (function () {
-    'use strict';
-	module.exports = function(express, testEndpoint) {
+	'use strict';
+	module.exports = function (express, testEndpoint) {
 
 		var router = express.Router();
-	
-		router.route('/test').get(function(req,res){
-			console.log('yes');
-			testEndpoint.test(req.query, function(result){
+
+		router.route('/test').get(function (req, res) {
+
+			testEndpoint.test(req.query, function (result) {
 				res.send(result);
-			});		
+			});
 		});
-		
+
 		return router;
 	};
-	
+
 })();
