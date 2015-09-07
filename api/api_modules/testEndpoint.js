@@ -17,7 +17,7 @@
 
 		return {
 			test: function (req, callback) {
-				callback('Hi Machan :)');
+				callback({ message: 'Hi Machan :)' });
 			},
 			testReturn: function () {
 				return 15;
