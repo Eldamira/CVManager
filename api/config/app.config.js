@@ -3,7 +3,7 @@
 	
 	module.exports = {
 		
-		serverPort:8070,
+		serverPort:8080,
 				
 	}
 	
