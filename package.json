@@ -26,7 +26,7 @@
     "phantomjs": "^1.9.18"
   },
   "scripts": {
-    "test": "jasmine-node ./test/spec --matchall",
+    "test": "jasmine-node ./test/spec --matchall --verbose",
     "start": "node server.js"
   },
   "repository": {
