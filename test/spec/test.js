@@ -1,7 +1,7 @@
 describe("Node Pre-Requistes", function () {
 	it("define is not defined", function () {
 		var val = typeof require;
-		expect(val == 'undefined').toBe(true);
+		expect(val == 'undefined').toBe(false);
 	});
 });
 
