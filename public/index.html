@@ -3,17 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>RMS test</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css" rel="stylesheet">
+	<link href="bower_components/bootstrap/css/bootstrap.min.css" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css" rel="stylesheet" /> 
 </head>
 <body ng-app="RMS">
 	<div ng-include="'./layouts/nav.html'"></div>
 	<div class="container">
-		<p> Updated </p>
 		<div ui-view></div>
 	</div>
 	
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	
 	<script  src="app.modules.js"></script>
 	<script  src="app.config.js"></script>
 	<script  src="home/home.controller.js"></script>
