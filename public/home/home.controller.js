@@ -8,7 +8,7 @@
 	function homeController ($scope, $http) {
 		
 		$scope.sayHi = function () {
-			$http.get('http://localhost:8080/api/test')
+			$http.get('api/test')
 				.success(function (data) {
 					$scope.message = data.message;
 				})
