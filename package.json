@@ -4,13 +4,15 @@
   "description": "Resume Management System built as the project for the Internship Certification Program (ICP) at 99X Technology.",
   "main": "server.js",
   "dependencies": {
+    "CoolBeans": "0.0.9",
     "angular": "^1.4.3",
     "angular-ui-router": "^0.2.15",
     "body-parser": "^1.13.2",
     "express": "^4.13.1",
     "grunt": "^0.4.5",
     "jasmine-node": "^1.14.5",
-    "mongoose": "^4.0.8",
+    "mongodb": "^2.0.42",
+    "mongoose": "^4.1.6",
     "request": "^2.61.0"
   },
   "devDependencies": {

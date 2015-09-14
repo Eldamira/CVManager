@@ -2,7 +2,11 @@
 	'use strict';
 	
 	module.exports = {
-		url: 'mongodb://localhost:27017/jobFinder'
+		url: 'mongodb://localhost:27017/ICP_DB'
 	};
-		
+
+
+
+
+
 })();
