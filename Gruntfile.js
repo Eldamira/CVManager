@@ -8,7 +8,8 @@ module.exports = function (grunt) {
 		eslint: {
 			options: {
 				config: './config/eslint.json',
-				reset: true
+				reset: true,
+				quiet: true
 			},
 			target: [
 				'./public/**/*.js',

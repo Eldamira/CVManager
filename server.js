@@ -4,7 +4,7 @@
 	'use strict';
 
 	var CoolBeans = require('CoolBeans');
-	global.DIRegistry = new CoolBeans('/home/ubuntu/workspace/api/utils/diregistry.util.json');
+	global.DIRegistry = new CoolBeans('./api/utils/diregistry.util.json');
 
 	var http = global.DIRegistry.get('http');
 	var bodyParser = global.DIRegistry.get('bodyParser');
