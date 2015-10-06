@@ -5,8 +5,11 @@
   "authors": [
     "Kasun Kodagoda <kvkrusl@gmail.com>"
   ],
-  "description": "Resume Management System for ICP",
-  "license": "ISC",
+  "description": "Resume Management System",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
