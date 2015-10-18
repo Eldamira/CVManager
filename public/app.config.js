@@ -11,6 +11,11 @@ function config ($stateProvider, $urlRouterProvider) {
 			templateUrl: '/home/home.html',
 			controller: 'HomeController'
         })
+        .state('admin',{
+			url: '/admin',
+			templateUrl: '/admin/admin-panel.html',
+			controller: 'AdminController'
+        })
 		.state('about',{
 			url: '/about',
 			templateUrl: '/about/about.html'
