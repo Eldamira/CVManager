@@ -19,5 +19,16 @@ function config ($stateProvider, $urlRouterProvider) {
 		.state('about',{
 			url: '/about',
 			templateUrl: '/about/about.html'
+        })
+		.state('viewpost',{
+			url: '/viewpost',
+			templateUrl: '/admin/view-posts.html',
+			controller: 'ViewPostController'
+        })
+		.state('viewcvdetails',{
+			url: '/viewcvdetails',
+			templateUrl: '/admin/view-cv-details.html',
+			controller: 'CVDetailsController',
+			params : { post:null}
         });
 }

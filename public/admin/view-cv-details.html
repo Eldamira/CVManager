@@ -1,0 +1,29 @@
+<div>
+	<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>University</th>
+				<th>Degree</th>
+				<th>Email</th>
+				<th>Contact Number</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Test</td>
+				<td>Test</td>
+				<td>Test</td>
+				<td>Test</td>
+				<td>Test</td>
+			</tr>
+			<tr ng-repeat="x in cvdetails">
+				<td><a>{{x.name}}</a></td>
+				<td>{{x.university}}</td>
+				<td>{{x.degree}}</td>
+				<td>{{x.email}}</td>
+				<td>{{x.contact_no}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

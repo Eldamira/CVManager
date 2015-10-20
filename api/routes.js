@@ -17,7 +17,7 @@
 
 (function () {
 	'use strict';
-	module.exports = function (express, testEndpoint) {
+	module.exports = function (express, testEndpoint, DBdao) {
 
 		var router = express.Router();
 
@@ -27,7 +27,13 @@
 				res.send(result);
 			});
 		});
-
+		
+		router.route('/getCVS').post(function(req,res) {
+			DBdao.getCVs(function(error,result){
+				res.send(result);			
+			});
+		});
+		
 		return router;
 	};
 

@@ -4,7 +4,7 @@ angular
     .module('RMS')
     .controller('AdminController',adminController);
     
-    function adminController ($scope){
+    function adminController ($scope,$http){
         $scope.c_icon_url = "../icons/candidate1.png";
         $scope.r_icon_url = "../icons/recomendation1.png";
         $scope.s_icon_url = '../icons/schedules1.png';
@@ -33,6 +33,7 @@ angular
                 }else if(elem.attr('id') === 'view-interviewers'){
                     $scope.i_icon_url = "../icons/interviewers1.png";
                 }
-            };
+            };		
+		
     }
 }());
