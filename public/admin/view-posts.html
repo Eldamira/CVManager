@@ -1,0 +1,26 @@
+<div>
+	<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th>Post Applied for</th>
+				<th>No of CV's</th>
+				<th>Date started</th>
+				<th>Date stopped</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Test</td>
+				<td>Test</td>
+				<td>Test</td>
+				<td>Test</td>
+			</tr>
+			<tr ng-repeat="x in cvs">
+				<td><a ui-sref="viewcvdetails({post:x.post})">{{x.post}}</a></td>
+				<td>{{x.amount}}</td>
+				<td>{{x.strt_date}}</td>
+				<td>{{x.end_date}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

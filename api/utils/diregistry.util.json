@@ -16,13 +16,26 @@
 		"module": "./api/routes",
 		"constructorArgs": [
 			{"bean": "express"},
-			{"bean": "testEndpoint"}
+			{"bean": "testEndpoint"},
+			{"bean": "DBdao"}
 		]
 	},
 	"testFile": {
 		"module": "./test/spec/test",
 		"constructorArgs": [
 			{"bean": "testEndpoint"}
+		]		
+	},
+	"DBSchema": {
+		"module": "./api/models/dbmodel",
+		"constructorArgs": [
+			{"bean": "mongoose"}
+		]		
+	},
+	"DBdao": {
+		"module": "./api/DAO/db.dao",
+		"constructorArgs": [
+			{"bean": "DBSchema"}
 		]		
 	}
 	
